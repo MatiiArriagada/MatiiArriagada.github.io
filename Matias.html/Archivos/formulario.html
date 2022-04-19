@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <section>
+        <h3>Formulario de registro</h3>
+
+
+        <form action="">
+            <label for="nombre">Ingrese su nombre<input type="text" id="nombre" placeholder="Coloque aquí su nombre">
+            </label> <br> <br>
+
+
+            <label for="apellido">Ingrese su apellido<input type="text" id="apellido" placeholder="Coloque aquí su apellido">
+            </label> <br> <br>
+
+
+            <label for="correo">Ingrese su correo<input type="email" id="correo" placeholder="Coloque aquí su correo">
+            </label> <br> <br>
+            
+            <label>¿Qué habitación prefiere? <br>
+                <input type="checkbox" name="Pequeña" value="">Pequeña <br>
+                <input type="checkbox" name="Mediana" value="">Mediana <br>
+                <input type="checkbox" name="Grande" value="">Grande
+            </label> <br> <br>
+
+
+            <label>¿Desea servicio a la habitación? <br>
+                <input type="radio" name="habitación" value="Sí">Sí <br>
+                <input type="radio" name="habitación" value="No">No <br>
+            </label> <br>
+
+            <label for="país">Selecciona país de procedencia
+                <select name="país-origen" id="país">
+                    <option value="" disabled selected>País</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Paraguay">Paraguay</option>
+                    <option value="Uruguay">Uruguay</option>
+                    <option value="Bolivia">Bolivia</option> <br />
+                </select>
+            </label> <br> <br>
+
+
+            <label> Escriba información extra. (opcional) <br>
+                <textarea name="text" maxlength="300" rows="10" cols="30"></textarea>
+            </label> <br> <br>
+            
+            <label>
+                <input type="button" value="Boton">
+                <input type="reset" value="Resetear">
+                <button type="submit">Enviar</button>
+            </label> <br> <br>
+
+        </form>
+    </section>
+    
+</body>
+</html>
