@@ -1,0 +1,16 @@
+body {
+    background-color: cyan;
+ }
+
+ h1 {
+    background-color: blueviolet;
+ }
+
+ p {
+    font-size: 30px;
+    color: salmon;
+ }
+ 
+ .foto {
+     width: 1341px;
+ }
