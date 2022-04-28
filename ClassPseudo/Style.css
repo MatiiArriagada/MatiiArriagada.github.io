@@ -20,7 +20,7 @@
 }
 
 .list-nav-bar a:hover {
-    color: khaki;
+    color: blueviolet;
 }
 
 .list-nav-bar a:active {
@@ -29,4 +29,21 @@
 
 .list-nav-bar a::after {
     content: " / ";
+}
+
+h1 a{
+    color: white;
+    background-color: burlywood;
+}
+
+h1 a{
+    text-decoration: none;
+}
+
+h1 a:hover {
+    color: blueviolet;
+}
+
+h1 a:active {
+    color: darkgray;
 }
