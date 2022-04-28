@@ -1,14 +1,14 @@
 body {
-    background-color: cyan;
+    background-color: black;
  }
 
  h1 {
-    background-color: blueviolet;
+    background-color: black;
     color: gold;
  }
 
  p {
-    background-color: blueviolet;
+    background-color: black;
     font-size: 30px;
     color: gold;
  }
