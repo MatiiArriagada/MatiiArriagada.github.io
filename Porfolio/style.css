@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar {
+    margin-top: 15px;
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0.993);
+}
+
+.list-nav-bar {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.list-nav-bar a{
+    color: white;
+    text-decoration: none;
+}
+
+.list-nav-bar a:hover {
+    color: rgb(255, 62, 223);
+}
+
+.list-nav-bar a:active {
+    color: silver;
+}
+
+.list-nav-bar a::after {
+    content: " / ";
+}
+
+h1 a{
+    color: white;
+    background-color: black;
+}
+
+h1 a{
+    text-decoration: none;
+}
+
+h1 a:hover {
+    color: rgb(255, 62, 223);
+}
+
+h1 a:active {
+    color: darkgray;
+}
+
+.image {
+    width: 85rem;
+    height: 50rem;
+}
