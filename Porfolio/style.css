@@ -1,54 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.nav-bar {
-    margin-top: 15px;
-    list-style: none;
-    background-color: rgba(0, 0, 0, 0.993);
+body {
+    font-family: 'EB Garamond', serif;
 }
 
-.list-nav-bar {
-    display: inline-block;
-    padding-left: 10px;
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: #2C2C2B;
+    color: #fff;
 }
 
-.list-nav-bar a{
-    color: white;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.brand {
+    margin-top: -8px;
+}
+
+.brand span {
+    color: #FF00FF;
+}
+.menu {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.menu li {
+    list-style: none; 
+}
+
+.menu a {
+    color: #fff;
     text-decoration: none;
+    padding: 10px 20px;
 }
 
-.list-nav-bar a:hover {
-    color: rgb(255, 62, 223);
+.menu a {
+    color: #FF00FF;
 }
-
-.list-nav-bar a:active {
-    color: silver;
-}
-
-.list-nav-bar a::after {
-    content: " / ";
-}
-
-h1 a{
-    color: white;
-    background-color: black;
-}
-
-h1 a{
-    text-decoration: none;
-}
-
-h1 a:hover {
-    color: rgb(255, 62, 223);
-}
-
-h1 a:active {
-    color: darkgray;
-}
-
-.image {
-    width: 85rem;
-    height: 50rem;
+.menu a:hover {
+    background-color: darksalmon;
+    color: black;
+    transition: ease-in .4s;
 }
