@@ -1,9 +1,25 @@
+<<<<<<< Updated upstream
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+=======
+@media screen {
+    (min-width: 500px;)
+}
+
+>>>>>>> Stashed changes
 
 * {
     margin: 0;
     padding: 0;
+<<<<<<< Updated upstream
     box-sizing: border-box;
+=======
+    font-family: Century Gothic;
+}
+
+.home {
+    display: flex;
+    flex-wrap: wrap;
+>>>>>>> Stashed changes
 }
 
 body {
@@ -49,8 +65,20 @@ body {
 .menu a {
     color: #FF00FF;
 }
+<<<<<<< Updated upstream
 .menu a:hover {
     background-color: darksalmon;
     color: black;
     transition: ease-in .4s;
 }
+=======
+
+h1 a:active {
+    color: darkgray;
+}
+
+.image {
+    width: 85rem;
+    height: 50rem;
+}
+>>>>>>> Stashed changes
