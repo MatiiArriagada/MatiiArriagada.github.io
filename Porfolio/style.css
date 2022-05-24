@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 
-@media screen {
-    (min-width: 500px;)
+@media screen (min-width: 500px;) {
+
 }
 
 * {
@@ -40,6 +40,11 @@ body {
 .brand span {
     color: #FF00FF;
 }
+
+.info-content span {
+    color: #FF00FF;
+}
+
 .menu {
     display: flex;
     width: 50%;
@@ -64,10 +69,15 @@ body {
     background-color: darksalmon;
     color: black;
     transition: ease-in .4s;
+    box-shadow: 2px 4px 13px -6px rgb(105, 244, 198);
 }
 
 h1 a:active {
     color: darkgray;
+}
+
+h1 {
+    font-size: 2.5em;
 }
 
 .image {
@@ -81,9 +91,24 @@ h1 a:active {
     height: 80vh;
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    align-items: center;
 }
 
-.img {
-    width: 550px;
-    height: 550px;
+.main img {
+    width: 490px;
+    height: 490px;
+}
+
+.download-cv {
+    padding: 10px 15px;
+    background-color: fuchsia;
+    border: none;
+    border-radius: 20px;
+    margin-top: 13px;
+    cursor: pointer;
+}
+
+.download-cv:hover {
+    background-color: darksalmon;
+    box-shadow: 2px 4px 13px -6px rgb(102, 231, 200);
 }
