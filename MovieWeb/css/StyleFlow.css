@@ -1,13 +1,18 @@
 
 
+body {
+    background-color: #2C2C2B;
+}
+
 .form-group {
     margin-bottom: 1rem;
+    display: inline-flex;
 }
 
 
 
-#inputValue {
-    width: 760px;
+#nombre_pelicula {
+    width: 400px;
     padding: .375rem .75rem;
     font-size: 1rem;
     font-weight: 400;
@@ -15,7 +20,6 @@
     outline: none;
     color: #495057;
     background-color: #fff;
-    background-clip: padding-box;
     border: 1px solid #ced4da;
     border-radius: .25rem;
 
@@ -23,7 +27,7 @@
 
 #search {
     color: #fff;
-    background-color: blue;
+    background-color: #015FE8;
     outline: none;
     min-height: 30px;
     font-weight: 380;
@@ -36,8 +40,29 @@
 }
 
 #search:hover {
-    background-color: red;
-    color: black;
+    background-color: black;
+    color: red;
+    transition: ease-in .4s;
+    box-shadow: 2px 4px 13px -6px rgb(105, 244, 198);
+}
+
+#delete {
+    color: #fff;
+    background-color: #015FE8;
+    outline: none;
+    min-height: 30px;
+    font-weight: 380;
+    text-align: center;
+    cursor: pointer;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .29rem;
+}
+
+#delete:hover {
+    background-color: black;
+    color: red;
     transition: ease-in .4s;
     box-shadow: 2px 4px 13px -6px rgb(105, 244, 198);
 }

@@ -1,25 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Movie Stars</title>
     <link rel="stylesheet" href="./css/StyleFlow.css">
-</head>
-<body>
-    <div class="container">
-        <h1>Welcome to Movies Favourite</h1>
+  </head>
+  <script type="./Js/script.js">
+    const buscarPelicula = () => {
+      const nombreDePelicula = document.getElementById("nombre_pelicula").value;
 
-        <form>
-            <div class="form-group">
-                <input type="text" id="inputValue">
-            </div>
-            
-            <button type="submit" id="search">Search a movie</button>
-        </form>
+      fetch(
+        `https://api.themoviedb.org/3/search/movie?api_key=af0e0a76ec3a39a7dc32e7f88e6e6968&language=en-US&query=${nombreDePelicula}&page=1&include_adult=false`,
+        {
+          method: "GET",
+          redirect: "follow",
+        }
+      )
+        .then((success) => success.json())
+        .then((data) => {
+          console.log(data.results);
+          for (const pelicula of data.results) {
+            let listItem = document.createElement("li");
+            listItem.appendChild(document.createElement("strong")).textContent =
+              pelicula.original_title;
+            document.getElementById("lista").appendChild(listItem);
+          }
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    };
+  </script>
+  <body>
+    <div>
+      
+      <div class="container">
+          <h1>Welcome to Movies Stars Favourite</h1>
+       <input id="nombre_pelicula"/>   
+      <button onClick="buscarPelicula()" id="search">Search a movie</button>
+      <button type="reset" id="delete">Delete</button>
+      </div>
+
+      <ul id="lista"></ul>
     </div>
-
-    <script src="./Js/script.js"></script>
-</body>
+  </body>
 </html>
