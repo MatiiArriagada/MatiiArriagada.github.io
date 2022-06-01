@@ -1,80 +1,77 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Century Gothic;
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #24292f;
-    font-family: 'EB Garamond', serif;
     color: #fff;
 }
 
-.form-group {
-    margin-bottom: 1rem;
-    display: inline-flex;
+.clase {
+    position: absolute;
+    left: 48%;
+    top: 45%;
+    transform: translate(-50%,-50%);
+    padding: 10px;
 }
 
-
-
-#nombre_pelicula {
-    width: 400px;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
+input {
     outline: none;
-    color: #495057;
-    background-color: #fff;
-    border: 1px solid #ced4da;
-    border-radius: .25rem;
-
+    box-sizing: border-box;
+    height: 60px;
+    width: 0;
+    padding: 0 20px;
+    color: black;
+    border-radius: 50px;
+    font-size: 20px;
+    border: 1px solid #D50000;
+    transition: all .7s ease;
 }
 
-#search {
-    color: #fff;
-    background-color: #015FE8;
-    outline: none;
-    min-height: 30px;
-    font-weight: 380;
+::placeholder {
+    color: grey;
+}
+
+.btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    background: #D50000;
+    line-height: 80px;
+    border-radius: 50%;
     text-align: center;
     cursor: pointer;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: .29rem;
+    transition: .5s;
 }
 
-#search:hover {
-    background-color: black;
-    color: red;
-    transition: ease-in .4s;
-    box-shadow: 2px 4px 13px -6px rgb(105, 244, 198);
+.btn i {
+    font-size: 25px;
+    color: white;
+    line-height: 80px;
+    transition: all .7s ease;
 }
 
-#delete {
-    color: #fff;
-    background-color: #015FE8;
-    outline: none;
-    min-height: 30px;
-    font-weight: 380;
-    text-align: center;
-    cursor: pointer;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: .29rem;
+.clase:hover input {
+    width: 450px;
 }
 
-#delete:hover {
-    background-color: black;
-    color: red;
-    transition: ease-in .4s;
-    box-shadow: 2px 4px 13px -6px rgb(105, 244, 198);
+.clase:hover i {
+    transform: rotate(-360deg);
 }
+
+.btn:hover {
+    background: #cc0000;
+}
+
+
+
 
 #lista {
     width: 100%;

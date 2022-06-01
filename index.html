@@ -1,19 +1,23 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=0.86"/>
     <title>Movie Stars</title>
     <link rel="stylesheet" href="StyleFlow.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
   </head>
   <body>
-    
-    <div class="container">
-      <h1>Welcome to Movies Stars Favourite</h1>
-      <input id="nombre_pelicula"> 
-      <button onClick="buscarPelicula()" id="search">Search a movie</button>
-      <button type="submit" id="delete">Delete</button>
+    <div class="contenedor">
+      <div>
+        <h1>Welcome to your cinema movies</h1>
+      </div>
+      <div class="clase">
+      <input type="text" placeholder="Search your movie favourite"> 
+       <div class="btn">
+        <i onclick="buscarPelicula()" class="fa fa-search"></i>
+       </div>
+      </div>
     </div>
 
     <div id="lista"></div>

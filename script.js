@@ -4,7 +4,7 @@ let moviecont = document.querySelector("#lista");
 
 
 const buscarPelicula = () => {
-    const nombreDePelicula = document.getElementById("nombre_pelicula").value;
+    const nombreDePelicula = document.getElementById("buscador").value;
 
     fetch(`https://api.themoviedb.org/3/search/movie?api_key=af0e0a76ec3a39a7dc32e7f88e6e6968&language=en-US&query=${nombreDePelicula}&page=1&`, {
         method: "GET",
