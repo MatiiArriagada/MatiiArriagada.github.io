@@ -33,6 +33,7 @@ input {
     transition: all .7s ease;
 }
 
+
 ::placeholder {
     color: grey;
 }
@@ -74,8 +75,11 @@ input {
 
 
 #lista {
-    width: 100%;
-    height: 100%;
+    display: flex;
+    flex-direction: row;
+    box-sizing: content-box;
+    animation: both;
+   
 }
 
 .tarjeta {
